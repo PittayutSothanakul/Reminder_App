@@ -36,7 +36,7 @@ class databaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         values.put(DB.HomeWorkEntry.COLUMN_ID, homeworks.id)
         values.put(DB.HomeWorkEntry.COLUMN_NAME, homeworks.homework)
         values.put(DB.HomeWorkEntry.COLUMN_NOTE, homeworks.note)
-//        values.put(DB.HomeWorkEntry.COLUMN_DATE, homeworks.date)
+//        values.put(DB.HomeWorkEntry.COLUMN_DATE , homeworks.date)
         // Insert the new row, returning the primary key value of the new row
         val newRowId = db.insert(DB.HomeWorkEntry.TABLE_NAME, null, values)
 
